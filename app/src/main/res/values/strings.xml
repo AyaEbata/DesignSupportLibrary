@@ -6,4 +6,5 @@
     <string name="login">LOGIN</string>
 
     <string name="error">%sが入力されていません</string>
+    <string name="fab_toast">fabだよ！</string>
 </resources>
