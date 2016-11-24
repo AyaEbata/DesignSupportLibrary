@@ -8,7 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 
 /**
- * TextInputLayout.
+ * Text Input Layout.
+ * Created by aya on 2016/11/23.
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setLoginButton() {
-        Button loginButton = (Button) findViewById(R.id.login_button);
+        Button loginButton = (Button) findViewById(R.id.button);
         loginButton.setOnClickListener(view -> {
             boolean isId = checkValidate(R.id.id_input_layout, R.id.id_text, "id");
             boolean isPass = checkValidate(R.id.pass_input_layout, R.id.pass_text, "Password");

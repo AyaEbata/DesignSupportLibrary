@@ -18,8 +18,11 @@
         android:clickable="true"
         app:fabSize="normal"
         app:srcCompat="@android:drawable/ic_menu_share"
+        android:id="@+id/fab"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/fab" />
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp" />
 </RelativeLayout>

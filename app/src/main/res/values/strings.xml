@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">DesignSupportLibrary</string>
+    <string name="app_name">Design Support Library</string>
 
     <string name="id">ID</string>
     <string name="password">Password</string>
-    <string name="login">LOGIN</string>
-
+    <string name="text_input_layout">Text Input Layout</string>
     <string name="error">%sが入力されていません</string>
-    <string name="fab_toast">fabだよ！</string>
+
+    <string name="fab_toast">Floating Action Buttonだよ！</string>
 </resources>
