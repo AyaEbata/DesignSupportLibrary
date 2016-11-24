@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".FabActivity" />
+        <activity android:name=".DecorationActivity" />
 
     </application>
 
