@@ -28,7 +28,7 @@ public class FabFragment extends Fragment {
 
     private void setFab(View view) {
         FloatingActionButton fab = (FloatingActionButton) view.findViewById(R.id.fab);
-        fab.setOnClickListener(v -> Toast.makeText(getContext(), R.string.fab_toast, Toast.LENGTH_LONG).show());
+        fab.setOnClickListener(v -> Toast.makeText(getContext(), R.string.fab_toast_text, Toast.LENGTH_LONG).show());
     }
 
 }

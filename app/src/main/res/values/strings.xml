@@ -6,5 +6,8 @@
     <string name="text_input_layout">Text Input Layout</string>
     <string name="error">%sが入力されていません</string>
 
-    <string name="fab_toast">Floating Action Buttonだよ！</string>
+    <string name="fab_toast_text">Floating Action Buttonだよ！</string>
+
+    <string name="snackbar">Snackbar</string>
+    <string name="snackbar_text">Snackbarだよ！</string>
 </resources>
