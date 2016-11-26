@@ -11,12 +11,12 @@ import android.widget.EditText;
  * Text Input Layout.
  * Created by aya on 2016/11/23.
  */
-public class MainActivity extends AppCompatActivity {
+public class TextInputLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_text_input_layout);
 
         setLoginButton();
     }
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             boolean isId = checkValidate(R.id.id_input_layout, R.id.id_text, "id");
             boolean isPass = checkValidate(R.id.pass_input_layout, R.id.pass_text, "Password");
             if (isId && isPass) {
-                startActivity(new Intent(MainActivity.this, DecorationActivity.class));
+                startActivity(new Intent(TextInputLayoutActivity.this, DecorationActivity.class));
             }
         });
     }
