@@ -33,7 +33,7 @@ public class SnackbarFragment extends Fragment {
 
     private void setSnackbar(View snackbarView) {
         Snackbar.make(snackbarView, R.string.snackbar_text, Snackbar.LENGTH_LONG).setAction("NEXT", actionView -> {
-            // 画面遷移
+//            startActivity(new Intent(getActivity(), CoordinatorLayoutActivity.class));
         }).show();
     }
 }
