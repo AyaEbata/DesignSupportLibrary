@@ -10,4 +10,7 @@
 
     <string name="snackbar">Snackbar</string>
     <string name="snackbar_text">Snackbarだよ！</string>
+
+    <string name="app_bar_layout_text">AppBarLayout + Toolbar</string>
+    <string name="next_button">NEXT</string>
 </resources>
