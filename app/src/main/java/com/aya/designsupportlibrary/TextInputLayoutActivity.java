@@ -44,6 +44,6 @@ public class TextInputLayoutActivity extends AppCompatActivity {
             textInputLayout.setErrorEnabled(false);
             return true;
         }
-
     }
+
 }

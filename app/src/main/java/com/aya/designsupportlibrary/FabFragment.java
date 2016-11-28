@@ -13,6 +13,7 @@ import android.widget.Toast;
  * Created by aya on 2016/11/25.
  */
 public class FabFragment extends Fragment {
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);

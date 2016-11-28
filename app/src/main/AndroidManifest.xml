@@ -18,6 +18,11 @@
 
         <activity android:name=".DecorationActivity" />
 
+        <activity
+            android:name=".AppBarLayoutAction"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
     </application>
 
 </manifest>
