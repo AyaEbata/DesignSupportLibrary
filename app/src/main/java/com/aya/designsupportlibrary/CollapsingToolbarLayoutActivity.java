@@ -1,34 +1,26 @@
 package com.aya.designsupportlibrary;
 
-import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Coordinator Layout.
+ * Collapsing Toolbar Layout.
  * Created by aya on 2016/11/28.
  */
-public class CoordinatorLayoutActivity extends AppCompatActivity implements OnRecyclerListener {
+public class CollapsingToolbarLayoutActivity extends AppCompatActivity implements OnRecyclerListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coordinator_layout);
+        setContentView(R.layout.activity_collapsing_toolbar_layout);
 
-        setToolbar();
         setRecyclerView();
-    }
-
-    private void setToolbar() {
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
     }
 
     private void setRecyclerView() {
@@ -44,6 +36,6 @@ public class CoordinatorLayoutActivity extends AppCompatActivity implements OnRe
 
     @Override
     public void onRecyclerClicked(View view, int position) {
-        startActivity(new Intent(CoordinatorLayoutActivity.this, CollapsingToolbarLayoutActivity.class));
+
     }
 }
