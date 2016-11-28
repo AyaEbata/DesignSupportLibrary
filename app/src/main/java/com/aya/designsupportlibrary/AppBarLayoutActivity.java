@@ -1,8 +1,10 @@
 package com.aya.designsupportlibrary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.Button;
 
 /**
  * App Bar Layout.
@@ -16,11 +18,17 @@ public class AppBarLayoutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_app_bar_layout);
 
         setToolbar();
+        setButton();
     }
 
     private void setToolbar() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+    }
+
+    private void setButton() {
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(view -> startActivity(new Intent(AppBarLayoutActivity.this, CoordinatorLayoutActivity.class)));
     }
 
 }
