@@ -16,8 +16,7 @@
         android:id="@+id/top_container"
         tools:layout="@layout/fragment_snackbar"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-    </fragment>
+        android:layout_alignParentEnd="true" />
 
     <fragment
         android:layout_width="match_parent"
@@ -26,7 +25,6 @@
         android:id="@+id/bottom_container"
         tools:layout="@layout/fragment_fab"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-    </fragment>
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

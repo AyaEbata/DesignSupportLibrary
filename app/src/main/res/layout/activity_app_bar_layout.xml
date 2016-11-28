@@ -25,8 +25,7 @@
         android:text="@string/app_bar_layout_text"
         android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp">
-    </TextView>
+        android:layout_marginLeft="20dp" />
 
     <Button
         android:text="@string/next_page"
