@@ -18,12 +18,12 @@ public class TextInputLayoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_input_layout);
 
-        setLoginButton();
+        setButton();
     }
 
-    private void setLoginButton() {
-        Button loginButton = (Button) findViewById(R.id.button);
-        loginButton.setOnClickListener(view -> {
+    private void setButton() {
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(view -> {
             boolean isId = checkValidate(R.id.id_input_layout, R.id.id_text, "id");
             boolean isPass = checkValidate(R.id.pass_input_layout, R.id.pass_text, "Password");
             if (isId && isPass) {
