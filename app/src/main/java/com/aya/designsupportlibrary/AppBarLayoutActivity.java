@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
  * App Bar Layout.
  * Created by aya on 2016/11/26.
  */
-public class AppBarLayoutAction extends AppCompatActivity {
+public class AppBarLayoutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
