@@ -44,6 +44,6 @@ public class CoordinatorLayoutActivity extends AppCompatActivity implements OnRe
 
     @Override
     public void onRecyclerClicked(View view, int position) {
-        startActivity(new Intent(CoordinatorLayoutActivity.this, CollapsingToolbarLayoutActivity.class));
+        startActivity(new Intent(this, CollapsingToolbarLayoutActivity.class));
     }
 }
