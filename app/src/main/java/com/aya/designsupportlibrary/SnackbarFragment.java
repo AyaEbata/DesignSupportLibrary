@@ -34,9 +34,9 @@ public class SnackbarFragment extends Fragment {
     }
 
     private void setSnackbar(View snackbarView) {
-        Snackbar.make(snackbarView, R.string.snackbar_text, Snackbar.LENGTH_LONG).setAction("NEXT", actionView -> {
-            startActivity(new Intent(getActivity(), AppBarLayoutActivity.class));
-        }).show();
+        Snackbar.make(snackbarView, R.string.snackbar_text, Snackbar.LENGTH_LONG)
+                .setAction(R.string.next_page, actionView -> startActivity(new Intent(getActivity(), AppBarLayoutActivity.class)))
+                .show();
     }
 
 }
