@@ -1,9 +1,12 @@
 package com.aya.designsupportlibrary;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 
 import java.util.ArrayList;
@@ -20,7 +23,16 @@ public class CollapsingToolbarLayoutActivity extends AppCompatActivity implement
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collapsing_toolbar_layout);
 
+        setToolbar();
         setRecyclerView();
+    }
+
+    private void setToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
     }
 
     private void setRecyclerView() {
@@ -29,7 +41,7 @@ public class CollapsingToolbarLayoutActivity extends AppCompatActivity implement
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         final List<String> list = new ArrayList<>();
         for (int i = 1; i <= 50 ; i++ ) {
-            list.add(getString(R.string.next_page));
+            list.add(getString(R.string.collapsing_toolbar_layout_text));
         }
         recyclerView.setAdapter(new RecyclerAdapter(getApplicationContext(), list, this));
     }
@@ -38,4 +50,15 @@ public class CollapsingToolbarLayoutActivity extends AppCompatActivity implement
     public void onRecyclerClicked(View view, int position) {
 
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                startActivity(new Intent(this, CoordinatorLayoutActivity.class));
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }

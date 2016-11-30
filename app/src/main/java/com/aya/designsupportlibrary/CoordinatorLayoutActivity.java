@@ -37,7 +37,7 @@ public class CoordinatorLayoutActivity extends AppCompatActivity implements OnRe
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
         final List<String> list = new ArrayList<>();
         for (int i = 1; i <= 50 ; i++ ) {
-            list.add(getString(R.string.next_page));
+            list.add(getString(R.string.coordinator_layout_text));
         }
         recyclerView.setAdapter(new RecyclerAdapter(getApplicationContext(), list, this));
     }

@@ -14,5 +14,8 @@
 
     <string name="app_bar_layout_text">AppBarLayout + Toolbar</string>
 
+    <string name="coordinator_layout_text">Coordinator Layoutだよー！</string>
+
+    <string name="collapsing_toolbar_layout_text">Collapsing Toolbar Layoutだよー！</string>
     <string name="image">image</string>
 </resources>
