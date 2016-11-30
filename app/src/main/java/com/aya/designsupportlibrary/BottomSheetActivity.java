@@ -1,6 +1,7 @@
 package com.aya.designsupportlibrary;
 
 import android.os.Bundle;
+import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -17,19 +18,31 @@ public class BottomSheetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_sheet);
 
-        setButton();
+        setBottomSheetDialogButton();
+        setPersistentBottomSheetButton();
     }
 
-    private void setButton() {
-        Button button = (Button) findViewById(R.id.button);
+    private void setBottomSheetDialogButton() {
+        Button button = (Button) findViewById(R.id.bottom_sheet_dialog_button);
         button.setOnClickListener(view -> setBottomSheetDialog());
     }
 
     private void setBottomSheetDialog() {
         BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
-        View sheetView = getLayoutInflater().inflate(R.layout.bottom_sheet_dialog, null);
-        bottomSheetDialog.setContentView(sheetView);
+        View view = getLayoutInflater().inflate(R.layout.bottom_sheet_dialog, null);
+        bottomSheetDialog.setContentView(view);
         bottomSheetDialog.show();
+    }
+
+    private void setPersistentBottomSheetButton() {
+        Button button = (Button) findViewById(R.id.persistent_bottom_sheet_button);
+        button.setOnClickListener(view -> setPersistentBottomSheet());
+    }
+
+    private void setPersistentBottomSheet() {
+        View view = findViewById(R.id.bottom_sheet);
+        BottomSheetBehavior behavior = BottomSheetBehavior.from(view);
+        behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
     }
 
 }

@@ -21,4 +21,7 @@
 
     <string name="bottom_sheet_dialog">Bottom Sheet Dialog</string>
     <string name="bottom_sheet_dialog_text">Bottom Sheet Dialogだよ！</string>
+
+    <string name="persistent_bottom_sheet">Persistent Bottom Sheet</string>
+    <string name="persistent_bottom_sheet_text">Persistent Bottom Sheetだよー！</string>
 </resources>
