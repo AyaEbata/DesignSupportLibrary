@@ -28,7 +28,7 @@ public class AppBarLayoutActivity extends AppCompatActivity {
 
     private void setButton() {
         Button button = (Button) findViewById(R.id.button);
-        button.setOnClickListener(view -> startActivity(new Intent(AppBarLayoutActivity.this, CoordinatorLayoutActivity.class)));
+        button.setOnClickListener(view -> startActivity(new Intent(this, CoordinatorLayoutActivity.class)));
     }
 
 }

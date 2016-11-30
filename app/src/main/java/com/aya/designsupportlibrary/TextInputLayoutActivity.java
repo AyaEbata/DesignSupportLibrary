@@ -27,7 +27,7 @@ public class TextInputLayoutActivity extends AppCompatActivity {
             boolean isId = checkValidate(R.id.id_input_layout, R.id.id_text, "id");
             boolean isPass = checkValidate(R.id.pass_input_layout, R.id.pass_text, "Password");
             if (isId && isPass) {
-                startActivity(new Intent(TextInputLayoutActivity.this, DecorationActivity.class));
+                startActivity(new Intent(this, DecorationActivity.class));
             }
         });
     }

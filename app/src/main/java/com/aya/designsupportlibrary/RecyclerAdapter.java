@@ -18,10 +18,12 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
 
     private final Context context;
     private List<String> itemList = new ArrayList<>();
+    private OnRecyclerListener listener;
 
-    RecyclerAdapter (final Context context, final List<String> itemList) {
+    RecyclerAdapter(final Context context, final List<String> itemList, OnRecyclerListener listener) {
         this.context = context;
         this.itemList = itemList;
+        this.listener = listener;
     }
 
     @Override
@@ -31,8 +33,17 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+        setView(holder, position);
+        onItemClicked(holder, position);
+    }
+
+    private void setView(RecyclerView.ViewHolder holder, int position) {
         final TextView textItem = (TextView) holder.itemView.findViewById(R.id.item);
         textItem.setText(itemList.get(position));
+    }
+
+    private void onItemClicked(RecyclerView.ViewHolder holder, int position) {
+        holder.itemView.setOnClickListener(v -> listener.onRecyclerClicked(v, position));
     }
 
     @Override
