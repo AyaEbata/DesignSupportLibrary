@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Design Support Library</string>
     <string name="next_page">NEXT PAGE</string>
+    <string name="image">image</string>
 
     <string name="id">ID</string>
     <string name="password">Password</string>
@@ -17,5 +18,10 @@
     <string name="coordinator_layout_text">Coordinator Layoutだよー！</string>
 
     <string name="collapsing_toolbar_layout_text">Collapsing Toolbar Layoutだよー！</string>
-    <string name="image">image</string>
+
+    <string name="bottom_sheet_dialog">Bottom Sheet Dialog</string>
+    <string name="bottom_sheet_dialog_text">Bottom Sheet Dialogだよ！</string>
+
+    <string name="persistent_bottom_sheet">Persistent Bottom Sheet</string>
+    <string name="persistent_bottom_sheet_text">Persistent Bottom Sheetだよー！</string>
 </resources>

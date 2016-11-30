@@ -48,7 +48,7 @@ public class CollapsingToolbarLayoutActivity extends AppCompatActivity implement
 
     @Override
     public void onRecyclerClicked(View view, int position) {
-
+        startActivity(new Intent(this, BottomSheetActivity.class));
     }
 
     @Override
