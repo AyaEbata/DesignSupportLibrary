@@ -1,7 +1,7 @@
 package com.aya.designsupportlibrary;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Tab Layout.
@@ -13,6 +13,15 @@ public class TabLayoutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_layout);
+
+        setFixingView();
+    }
+
+    private void setFixingView() {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .add(R.id.fragment, new FixingTabLayoutFragment())
+                .commit();
     }
 
 }

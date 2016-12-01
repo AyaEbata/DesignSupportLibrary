@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * Fixing Tab Layout.
@@ -21,6 +22,19 @@ public class FixingTabLayoutFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        setButton(view);
+    }
+
+    private void setButton(View view) {
+        Button button = (Button) view.findViewById(R.id.button);
+        button.setOnClickListener(v ->
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment, new ScrollTabLayoutFragment())
+                        .commit()
+        );
     }
 
 }
