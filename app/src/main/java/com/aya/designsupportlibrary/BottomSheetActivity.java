@@ -1,11 +1,13 @@
 package com.aya.designsupportlibrary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 
 /**
  * Bottom Sheet.
@@ -20,6 +22,7 @@ public class BottomSheetActivity extends AppCompatActivity {
 
         setBottomSheetDialogButton();
         setPersistentBottomSheetButton();
+        onPersistentBottomClicked();
     }
 
     private void setBottomSheetDialogButton() {
@@ -43,6 +46,11 @@ public class BottomSheetActivity extends AppCompatActivity {
         View view = findViewById(R.id.bottom_sheet);
         BottomSheetBehavior behavior = BottomSheetBehavior.from(view);
         behavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+    }
+
+    private void onPersistentBottomClicked() {
+        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.next_page);
+        linearLayout.setOnClickListener(view -> startActivity(new Intent(this, TabLayoutActivity.class)));
     }
 
 }
