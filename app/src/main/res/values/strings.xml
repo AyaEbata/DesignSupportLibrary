@@ -25,7 +25,7 @@
     <string name="persistent_bottom_sheet">Persistent Bottom Sheet</string>
     <string name="persistent_bottom_sheet_text">Persistent Bottom Sheetだよー！</string>
 
-    <string name="fixing_tab_layout_text">Tab Layout（固定）</string>
-    <string name="scroll_tab_layout_text">Tab Layout（スクロール）</string>
+    <string name="fixing_tab_layout_text">Tab Layout（タブ: 固定）</string>
+    <string name="scroll_tab_layout_text">Tab Layout（タブ: スクロール）</string>
     <string name="tab">Tab</string>
 </resources>
