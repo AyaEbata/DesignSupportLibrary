@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.aya.designsupportlibrary.adapters.ViewPagerAdapter;
+
 /**
  * View Pager and Tab Layout.
  * Created by aya on 2016/12/10.
