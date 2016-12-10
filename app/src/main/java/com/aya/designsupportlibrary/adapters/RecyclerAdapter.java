@@ -1,4 +1,4 @@
-package com.aya.designsupportlibrary;
+package com.aya.designsupportlibrary.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.aya.designsupportlibrary.R;
+import com.aya.designsupportlibrary.listeners.OnRecyclerListener;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +23,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter {
     private List<String> itemList = new ArrayList<>();
     private OnRecyclerListener listener;
 
-    RecyclerAdapter(final Context context, final List<String> itemList, OnRecyclerListener listener) {
+    public RecyclerAdapter(final Context context, final List<String> itemList, OnRecyclerListener listener) {
         this.context = context;
         this.itemList = itemList;
         this.listener = listener;

@@ -8,6 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.aya.designsupportlibrary.adapters.RecyclerAdapter;
+import com.aya.designsupportlibrary.listeners.OnRecyclerListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
