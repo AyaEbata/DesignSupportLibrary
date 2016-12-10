@@ -1,10 +1,12 @@
 package com.aya.designsupportlibrary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -24,10 +26,17 @@ public class ViewPagerFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         setText(view);
+        setButton(view);
     }
 
     public void setText(View view) {
         TextView textView = (TextView) view.findViewById(R.id.textView);
         textView.setText(R.string.view_pager);
     }
+
+    private void setButton(View view) {
+        Button button = (Button) view.findViewById(R.id.button);
+        button.setOnClickListener(v -> startActivity(new Intent(getActivity(), BottomNavigationViewActivity.class)));
+    }
+
 }
