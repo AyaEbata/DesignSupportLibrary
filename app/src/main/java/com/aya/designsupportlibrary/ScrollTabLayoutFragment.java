@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * Scroll Tab Layout.
@@ -24,6 +25,7 @@ public class ScrollTabLayoutFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         setTabLayout(view);
+        setButton(view);
     }
 
     private void setTabLayout(View view) {
@@ -32,6 +34,17 @@ public class ScrollTabLayoutFragment extends Fragment {
         for (int i = 0; i < 10; i++) {
             tabLayout.addTab(tabLayout.newTab().setText((R.string.tab)));
         }
+    }
+
+    private void setButton(View view) {
+        Button button = (Button) view.findViewById(R.id.button);
+        button.setOnClickListener(v ->
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.fragment, new ViewPagerTabLayoutFragment())
+                        .commit()
+        );
     }
 
 }

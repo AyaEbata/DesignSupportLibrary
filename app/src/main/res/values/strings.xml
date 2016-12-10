@@ -28,4 +28,6 @@
     <string name="fixing_tab_layout_text">Tab Layout（タブ: 固定）</string>
     <string name="scroll_tab_layout_text">Tab Layout（タブ: スクロール）</string>
     <string name="tab">Tab</string>
+
+    <string name="view_pager">Tab Layout + View Pager</string>
 </resources>
