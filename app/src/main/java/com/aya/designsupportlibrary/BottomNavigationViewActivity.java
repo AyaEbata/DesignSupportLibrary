@@ -1,8 +1,10 @@
 package com.aya.designsupportlibrary;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Button;
 import android.widget.TextView;
 
 /**
@@ -16,10 +18,11 @@ public class BottomNavigationViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navigation_view);
 
-        onClickedMenu();
+        onMenuClicked();
+        onButtonClicked();
     }
 
-    private void onClickedMenu() {
+    private void onMenuClicked() {
         TextView text = (TextView) findViewById(R.id.text);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(item -> {
@@ -36,6 +39,11 @@ public class BottomNavigationViewActivity extends AppCompatActivity {
             }
             return true;
         });
+    }
+
+    private void onButtonClicked() {
+        Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(view -> startActivity(new Intent(this, NavigationViewActivity.class)));
     }
 
 }
