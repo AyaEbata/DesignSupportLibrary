@@ -30,4 +30,9 @@
     <string name="tab">Tab</string>
 
     <string name="view_pager">Tab Layout + View Pager</string>
+
+    <string name="menu_search">Search</string>
+    <string name="menu_add">Add</string>
+    <string name="menu_settings">Settings</string>
+    <string name="push_menu_text">menuを押してね！</string>
 </resources>
