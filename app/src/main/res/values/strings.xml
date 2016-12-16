@@ -42,4 +42,7 @@
 
     <string name="navigation_view">Navigation View (Navigation Drawer)</string>
     <string name="finish">finish!!</string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
 </resources>
