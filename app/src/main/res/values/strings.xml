@@ -35,4 +35,14 @@
     <string name="menu_add">Add</string>
     <string name="menu_settings">Settings</string>
     <string name="push_menu_text">menuを押してね！</string>
+
+    <string name="menu_camera">Camera</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+
+    <string name="navigation_view">Navigation View (Navigation Drawer)</string>
+    <string name="finish">finish!!</string>
+
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
 </resources>

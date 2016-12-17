@@ -32,7 +32,7 @@ public class BottomSheetActivity extends AppCompatActivity {
 
     private void setBottomSheetDialog() {
         BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(this);
-        View view = getLayoutInflater().inflate(R.layout.bottom_sheet_dialog, null);
+        View view = getLayoutInflater().inflate(R.layout.dialog_bottom_sheet, null);
         bottomSheetDialog.setContentView(view);
         bottomSheetDialog.show();
     }

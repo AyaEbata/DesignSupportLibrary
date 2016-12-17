@@ -28,6 +28,9 @@
         <activity android:name=".BottomSheetActivity" />
         <activity android:name=".TabLayoutActivity" />
         <activity android:name=".BottomNavigationViewActivity" />
+        <activity
+            android:name=".NavigationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
